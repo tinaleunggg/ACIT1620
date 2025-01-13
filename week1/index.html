@@ -1,15 +1,74 @@
 <!DOCTYPE html>
 <html>
+    <!-- <html> tag has "lang" attribute-->
     <head>
-        <title>Webpage week 1 </title>
+        <title>My first webpage week 1</title>
+        <!--for the top bar of the webpage
+        -->
     </head>
     <body>
-        <h1>
-            This is the body of the page.
-        </h1>
-        <p>
-            This is a paragraph.
-            
+        <h1 id="top_of_the_body">This is the body of the page. </h1>
+        <h2>Let's see how H2 looks like.</h2>
+
+        <p>This is a paragraph.</p>
+
+        <p class="main_text">
+            A paragraph is used as a <strong>text block.</strong>
         </p>
-    </body>
+
+        <!--CLASS is an ATTRIBUTE of the <p> tag
+        class is name of the attribute and "main_text" is the value-->
+
+        <!-- the tag <strong> is NESTED in <p> tag-->
+
+        <img src="giphy.webp" alt="drinking"/>
+        <!-- the "alt" attribute is for screen reader to read out and if image is not able to display -->
+        
+        <ul>
+            <li>List item 1</li>
+            <li>list item 2</li>
+            <li>list item 3</li>
+        </ul>
+        <ol>
+            <li>ordered list item 1</li>
+            <li>ordered list item 2</li>
+            <li>ordered list item 3</li>
+        </ol>
+    
+        <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Creating_the_content">
+            <h2>This a test of line. Go check out the whole HTML tutorial here. </h2></a>
+   
+   
+        <!-- URLs can point to HTML files, text files, images, documents...
+         wrap a block with anchor tag can make the whole block element a link-->
+        
+        <a href="www.google.com" title="google">hover over to see where the link goes to</a>
+
+
+        <a href="index.html#top_of_the_body">Go to the top of the page</a>
+        <!--doocument fragments:  link to the specific part of the document-->
+
+        <!-- ROOT of a directory in here is "Week1". index.html will be the home page/landing page-->
+
+        <P>Good link should not repeat the URL.
+            Don't say it is a link. Screen reader will say it is a link.
+            keep it short
+            Minimize instances where multiple copies of the same text are linked to different places. 
+        </P>
+
+        <a href="mailto:oleung7@my.bcit.ca">Send email to me</a>
+
+
+
+        <figure>
+            <img src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg" 
+            width="150"
+            height="150" 
+            title="t-rex"
+            alt="The head and torso of a dinosaur skeleton; it has a large head with long sharp teeth">
+            <figcaption>A T-Rex on display in the Manchester University Museum</figcaption>
+        </figure>
+
+
+        </body>
 </html>
