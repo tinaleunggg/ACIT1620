@@ -1,0 +1,65 @@
+@media screen and (min-device-width: 481px) {
+    #guarentee {
+        margin-right: 250 px;
+    }
+    /* the rules will be applied when min-device-width: 481px*/
+}
+
+@media screen and (max-device-width: 480px) {
+    #guarentee {
+        margin-right: 30px;
+    }
+}
+
+
+@media print {
+    body{
+        font-family:'Times New Roman', Times, serif' ;
+    }
+}
+
+
+body {
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6em;
+}
+
+h1, h2{
+    color: #007e7e;
+}
+
+h1 {
+    font-size: 150%;
+}
+
+h2 {
+    font-size: 130%;
+}
+
+#guarantee{
+    border-color: rgb(111, 87, 129);
+    border-width: thick;
+    border-style: dashed;
+    /*border-top-color: black;
+    border-top-style: dashed;*/
+    border-radius: 15px;
+    background: rgb(173, 199, 199);
+    padding: 25px;
+    padding-left: 80px;
+    margin: 30px;
+    margin-right: 200px;
+    background-image: url(images/background.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+    
+}
+
+ul {
+    background-color: rgb(219, 178, 231);
+    width: 300px;
+    border-radius: 15px;
+    padding: 10 px;
+    margin: 20px;
+}
+

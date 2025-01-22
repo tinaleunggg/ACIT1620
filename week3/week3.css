@@ -1,0 +1,63 @@
+/*
+
+Selectors
+
+h1, p                   select h1 and p
+p span                  select span that is a descendant of p
+h1 + p                  select p that is immediately preceded by h1
+.class1                 select all elements with class="class1"
+.class1.class2          select all elements with class="class1 class2"
+..class                 select all elements with class="class" that are 
+                        descendants of an element with class="class"
+#id1                    select element with id="id1"
+*                       select all elements 
+p *                     select all elements that are descendants of p
+article *:first-child   select first child of article
+
+
+
+a:link                  select unvisited links
+a:visited               select visited links
+a:hover                 select links on mouse over
+
+*/
+
+
+html {
+    box-sizing: border-box;
+  }
+  
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+  }
+
+/*
+select *,  *::before, *::after
+-> select all elements, their ::before and ::after pseudo-elements
+-> make sure every element is border-box sizing
+*/
+
+
+
+h1 {
+    color: red;
+  }
+
+p,
+li {
+  color: green;
+}
+
+a:link {
+    color: pink;
+  }
+  
+  a:visited {
+    color: green;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }

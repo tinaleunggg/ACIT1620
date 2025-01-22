@@ -1,0 +1,79 @@
+
+body{
+    background-color:  #FBF5DD;
+    color: #16404D;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+header{
+    background-color: #A6CDC6;
+    padding: 100px;
+    margin: 0px;
+}
+
+header h1{
+    color: #16404D;
+    font-size: 40px;
+    text-align: center;
+}
+
+div{
+    width: 200px;
+    margin: 0 auto;
+}
+
+
+
+#link-bio, #link-bio:visited{
+    color: hsla(175, 50%, 40%, 0.726);
+}
+
+#link-bio:hover{
+    color: rgba(196, 84, 234, 0.695);
+}
+
+
+#link-project, #link-project:visited{
+    color: hsla(205, 50%, 40%, 0.726);
+}
+#link-project:hover{
+    color: rgba(196, 84, 234, 0.695);
+}
+
+#link-skill, #link-skill:visited{
+    color:  hsla(190, 50%, 40%, 0.726);
+}
+#link-skill:hover{
+    color: rgba(196, 84, 234, 0.695);
+}
+
+
+section {
+    display:block;
+    width: 1000px;
+    margin: 30px auto;
+    padding: 50px;
+    background-color:hsl(169, 28%, 85%);
+    border-radius: 15px;
+    color: hsla(194, 35%, 19%, 0.726);
+}
+
+section h2{
+    color: hsla(194, 56%, 40%, 0.726);
+    font-size: 30px;
+}
+
+section div{
+    background-color: hsl(169, 20%, 90%);
+    display: block;
+    margin: 20px;
+    Padding: 10px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color:hsla(194, 56%, 40%, 0.726);
+    border-style: dashed;
+
+}

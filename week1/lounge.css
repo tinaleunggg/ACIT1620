@@ -1,0 +1,68 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* Use Verdana if a/v, then Geneca, .. last one sans-serif */
+}
+
+/* 
+*{
+    margin: 0px;
+    padding: 0px;
+} */
+
+
+#unique{
+    font-size: 150%;
+    color: red;
+}
+
+div p {
+    color: purple;
+}
+
+ul > ul > li {
+    color: orange;
+}
+
+h1 + p {
+    color: teal;
+}
+
+input[type="text"]{
+    border: 2px solid rgb(41, 155, 115);
+}
+/* [] is attribute selector */
+
+a:hover{
+    color: red;
+}
+
+
+p{
+    color: hsl(121, 36%, 27%);
+}
+
+h1, h2{
+    color: grey;
+    border-bottom: 2px solid black;
+}
+
+em{
+    font-family: serif;
+}
+
+p.green {
+    color: green;
+}
+
+p.red {
+    color: red;
+}
+
+p.blue {
+    color: blue;
+}
+
+p.purple {
+    color: purple;
+}
+

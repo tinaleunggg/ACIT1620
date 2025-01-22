@@ -4,16 +4,48 @@
         <title>Table</title>
     </head>
     <body>
+        <h2>This page make use of table related tags</h2>
+        <p>
+            table : create a table
+        </p>
+        <p>
+            caption : add a caption to the table
+        </p>
+        <p>
+            tbody : group the body content in a table
+        </p>
+        <p>
+            th : table header
+        </p>
+        <p>
+            tr : table row
+        </p>
+        <p>
+            td : table data
+        </p>
+        <p>
+            rowspan : make a data take up two rows
+        </p>
+        <p>
+            colspan : make a data take up two columns
+        </p>
+        <p>
+            tfoot : group the footer content in a table
+        </p>
         
-        <h2>Student grade</h2>
+        
+        
         <table border="1">
-            <caption>Grade information for winter term 2025</caption>
+            <caption>caption : Grade information for winter term 2025</caption>
+             <!--<tr> tabel row  <th> table header <td> table data-->
+            <tbody>
+         
             <tr>
                 <th>Student Name</th>
                 <th>Subject</th>
                 <th>Grade</th>
             </tr>
-            <!--<tr> tabel row  <th> table header <td> table data-->
+           
             <tr>
                 <td >John</td>
                 <td>Math</td>
@@ -41,7 +73,12 @@
             <tr>
                 <td>Science</td>
                 <td>A</td>
-            <!--rowspan make a data take up two rows-->
+            <!--rowspan make a data take up two rows-->       
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total number of students: 3</td>
+                </tr>
         </table>
 
         <details>
