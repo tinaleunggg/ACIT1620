@@ -69,13 +69,13 @@ section h2{
 }
 
 section div{
-    background-color: hsl(169, 20%, 90%);
+    background-color: #e0ebe9;
     display: block;
     margin: 20px;
     Padding: 10px;
     border-radius: 10px;
     border-width: 1px;
-    border-color:hsla(194, 56%, 40%, 0.726);
+    border-color:#2d849fb9;
     border-style: dashed;
 
 }
@@ -86,8 +86,8 @@ div a{
 }
 
 div a:visited{
-    color: hsla(194, 56%, 40%, 0.726);
-    
+    color: #2d849fb9;
+
 }
 
 div a:hover{
