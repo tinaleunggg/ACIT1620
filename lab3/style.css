@@ -84,12 +84,15 @@ section div{
 div a{
     color: #ffffff;
 }
+
 div a:visited{
     color: hsla(194, 56%, 40%, 0.726);
+    
 }
 
 div a:hover{
     color: rgba(196, 84, 234, 0.695);
+
 }
 
 footer {
