@@ -18,6 +18,7 @@ header h1{
     color: #16404D;
     font-size: 40px;
     text-align: center;
+    font-weight: bold;
 }
 
 div{
@@ -64,6 +65,7 @@ section {
 section h2{
     color: hsla(194, 56%, 40%, 0.726);
     font-size: 30px;
+    
 }
 
 section div{
@@ -77,3 +79,29 @@ section div{
     border-style: dashed;
 
 }
+
+
+div a{
+    color: #ffffff;
+}
+div a:visited{
+    color: hsla(194, 56%, 40%, 0.726);
+}
+
+div a:hover{
+    color: rgba(196, 84, 234, 0.695);
+}
+
+footer {
+    background-color: #4a6e94d5;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer h3, footer p{
+    display: inline;
+    padding: 10px;
+}
+
+
