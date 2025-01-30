@@ -13,7 +13,7 @@ h1 + p                  select p that is immediately preceded by h1
 *                       select all elements 
 p *                     select all elements that are descendants of p
 article *:first-child   select first child of article
-
+box > *                 select all children of box
 
 
 a:link                  select unvisited links

@@ -52,14 +52,67 @@ h2 {
     background-image: url(images/background.gif);
     background-repeat: no-repeat;
     background-position: top left;
-    
+
 }
 
 ul {
-    background-color: rgb(219, 178, 231);
+    background-color: hsl(286, 52%, 80%);
     width: 300px;
     border-radius: 15px;
     padding: 10 px;
     margin: 20px;
+}
+
+#elixir{
+    border-width: thin;
+    border-style: solid;
+    border-color: #007e7e;
+    
+    width: 200px;
+/*     
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px; */
+    padding: 0px 20px 20px 20px;
+    
+    margin-left: 20px;
+
+    text-align: center;
+
+    background-image: url(images/cocktail.gif);
+    background-repeat: repeat-x;
+
+    line-height: 1em;
+
+    float: right;
+}
+
+#elixir h2{
+    color: black;
+}
+
+#elixir h3{
+    color: red;
+}
+
+.cd{
+    font-style: italic;
+}
+
+.artist{
+    font-weight: bold;
+}
+
+#elixir a:link {
+    color: #137c6e;
+}
+
+#elixir a:visited {
+    color: #8a340a;
+}
+
+#elixir a:hover {
+    background: #f9e6ff;
+    color: #b86b00;
 }
 

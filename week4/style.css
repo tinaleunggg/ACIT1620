@@ -1,0 +1,76 @@
+/* .box >*{
+    border: 2px solid rgb(33, 38, 175);
+    border-radius: 5px;
+    background-color: rgb(194, 236, 236);
+} 
+
+.box{
+    border: 2px dotted rgb(64, 175, 185);
+    display: flex;
+    flex-direction: column-reverse;
+} */
+
+
+.flex-container{
+    display: flex;  /*activate the flex box*/
+    flex-direction: row;  
+    justify-content: space-around;  /*distribute the items with equal space around them, distribute evenly*/
+    align-items: center; /*align centre in their own space   flex-start,.....*/ 
+    border: 2px solid rgb(43, 101, 182);
+    padding: 10px;
+    background-color: #f9f9f9;
+    gap: 20px;  
+    height: 500px;
+    flex-wrap: wrap;
+}
+
+.flex-item{
+    flex: 1;    /*flex basis property, decide each item grows equally*/
+    min-width: 100px;  /*min width for responsiveness*/
+    max-width: 400px;   /* responsiveness*/
+    text-align: center;
+    border: 1px solid blue;
+    padding: 20px;
+    background-color: #e3f2fd;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(48, 59, 134, 0.5);   /*shift the shadow to right, down of the element and 20 px is blurryness*/
+    
+    height: 100px;
+    margin: 10px;
+    line-height: 100px;
+}
+
+
+/*
+---- PARENT PROPERTY ----
+
+flex-display by default is row, inline
+specific display: flex in the container of the group 
+
+flex-wrap: wrap
+flex items layout respecting the sizes,
+
+flex-wrap: nowrap
+flex items layout does not respecting the sizes, they wiil be spaced inline equally/in specific relationship
+
+flex-direction + flex-wrap  
+-> flex-flow      default: row nowrap
+
+jusitify-content:        spacing along the main axis
+align-items:             spacing along the cross axis
+align-content:           spacing between lines of content
+
+gap:                     gap between the items, not between the edge
+
+
+
+---- CHILDREN PROPERTY ----
+
+
+flex basis
+flex: 1 1 auto
+1 flex grow, share space with other items with flex grow of 1
+1 flex shrink, flex grow, share space with other items with flex shrink of 1
+auto
+
+*/
