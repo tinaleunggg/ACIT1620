@@ -36,7 +36,7 @@ html {
 /*
 select *,  *::before, *::after
 -> select all elements, their ::before and ::after pseudo-elements
--> make sure every element is border-box sizing
+-> make sure every element is border-box sizing  (box-sizing is not inherited so we need to specify the pseudo class to cover its child)
 */
 
 

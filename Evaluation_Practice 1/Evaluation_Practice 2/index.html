@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions and variables</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="page-container">
+        <header>
+            <h1>CSS Transitions and variables</h1>
+        </header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Pricing</li>
+                <li>Content</li>
+            </ul>
+        </nav>
+        <div id="contents">
+            <div id="transitions">
+                <h2>CSS Transitions</h2>
+                <p>
+                    CSS transitions provide a way to control animation speed when changing CSS properties. 
+                    Instead of having property changes take effect immediately, 
+                    you can cause the changes in a property to take place over a period of time. For example, 
+                    if you change the color of an element from white to black, usually the change is instantaneous.
+                    With CSS transitions enabled,
+                    changes occur at time intervals that follow an acceleration curve, all of which can be customized.
+                </p>
+                <p>
+                    Animations that involve transitioning between two states are often called implicit transitions 
+                    as the states in between the start and final states are implicitly defined by the browser.
+                </p>
+                <p>
+                    CSS transitions let you decide which properties to animate (by listing them explicitly), 
+                    when the animation will start (by setting a delay), how long the transition will last (by setting a duration), 
+                    and how the transition will run (by defining an easing function, e.g., linearly or quick at the beginning, slow at the end).
+                </p>
+                <p>
+                    The Web author can define which property has to be animated and in which way. 
+                    This allows the creation of complex transitions. However, some properties are
+                     not animatable as it doesn't make sense to animate them.
+                </p>
+            </div>
+            <div id="variables">
+                <h2>CSS Variables</h2>
+                <p>
+                    Custom properties (sometimes referred to as CSS variables or cascading variables) are 
+                    entities defined by CSS authors that represent specific values to be reused throughout a document.
+                     They are set using the @property at-rule or by custom property syntax (e.g., --primary-color: blue;).
+                      Custom properties are accessed using the CSS var() function (e.g., color: var(--primary-color);).
+                </p>
+                <p>
+                    Complex websites have very large amounts of CSS, and this often results in a lot of repeated CSS values. For example,
+                     it's common to see the same color used in hundreds of different places in stylesheets. Changing a color that's been 
+                     duplicated in many places requires a search and replace across all rules and CSS files. Custom properties allow a 
+                     value to be defined in one place, then referenced in multiple other places so that it's easier to work with. 
+                     Another benefit is readability and semantics. For example, 
+                    --main-text-color is easier to understand than the hexadecimal color #00ff00, 
+                    especially if the color is used in different contexts.
+                </p>
+                <p>
+                    Custom properties defined using two dashes (--) are subject to the cascade and inherit their value from their parent. 
+                    The @property at-rule allows more control over the custom property and lets you specify whether it inherits its value 
+                    from a parent, what the initial value is, and the type constraints that should apply.
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        copy right@tinaleung
+    </footer>
+</body>
+</html>

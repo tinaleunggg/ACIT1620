@@ -1,0 +1,53 @@
+/* Set fonts, borders and padding */
+
+:root{
+  --main-bg-color: cornflowerblue;
+}
+
+body {
+    font-family: sans-serif;
+    color: white;
+  }
+  
+  div,
+  input,
+  textarea {
+    border: 2px black solid;
+    padding: 4px;
+    margin: 4px;
+  }
+  
+  .container {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* For each class, set some colors */
+  .one {
+    /* background-color: cornflowerblue; */
+    background-color: var(--main-bg-color);
+  }
+  .two {
+    color: black;
+    background-color: aquamarine;
+  }
+  .three {
+    /* background-color: cornflowerblue; */
+    background-color: var(--main-bg-color);
+  }
+  .four {
+    /* background-color: cornflowerblue; */
+    background-color: var(--main-bg-color);
+  }
+  .five {
+    /* background-color: cornflowerblue; */
+    background-color: var(--main-bg-color);
+  }
+  
+
+ 
+  
+
+  

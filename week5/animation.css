@@ -1,0 +1,56 @@
+/* p {
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+is equal to
+
+  p {
+    animation: 3s infinite alternate slidein;
+    }
+    /* duration, iteration-count, direction, name*/
+
+
+
+p {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+p span {
+    display: inline-block;
+    animation-duration: 3s;
+    animation-name: growshrink;
+  }
+  
+@keyframes slidein {
+  from {
+    translate: 150vw 0;  /* move the element horizontally by 150vw (150% of the browser's viewport width) from its current position */
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+
+
+@keyframes growshrink {
+    25%,
+    75% {
+      scale: 100%;
+      color: green;
+    }
+
+    /* at 25% and 75% timeline of the animation, scale it to 100% */
+  
+    50% {
+      scale: 300%;
+      color: magenta;
+    }
+    /* at 50% of the timeline, scale to 200% */
+
+}

@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    color: white;
+    font-family: sans-serif;
+    width: 200px;
+    height: 200px;
+    margin: 4px;
+    padding: 8px;
+    border: 2px black solid;
+  }
+
+  @property --box-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: cornflowerblue;
+  }
+
+  .parent {
+    --box-color: green;  /* can edit variable later on according to priority */
+    background-color: var(--box-color);
+  }
+
+  .child {
+    height: 40%;
+    width: 80%;
+    background-color: var(--box-color);
+  }
+  /*  property value is not inherited,
+      -> initial value will apply to child box */
+  

@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+div {
+  color: black;
+  font-family: sans-serif;
+  width: 75%;
+  height: 80%;
+  margin: 4px;
+  border: 2px black solid;
+}
+
+p {
+margin: 0;
+}
+
+.one {
+height: 250px;
+}
+
+.two {
+height: 80%;
+}
+
+.three {
+height: 40%;
+}
+
+.four {
+height: 40%;
+}
+
+div {
+  background-color: var(--box-color);
+}
+/*it is fine to use a variable before defining it in CSS,
+the broswer parse the whole css document first to look for variable definition*/
+
+.two{
+  --box-color: cornflowerblue;
+}
+
+.three {
+  --box-color: aquamarine;
+}

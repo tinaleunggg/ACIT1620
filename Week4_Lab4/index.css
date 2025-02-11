@@ -78,6 +78,9 @@ The navbar class should include the following styles
 
 .nav-item:hover{
     background-color: rgb(4, 124, 18);
+    padding: 10px 15px;
+    margin: -10px 0px;
+    border-radius: 5px;
 }
 
 /* Content Section */
@@ -128,7 +131,7 @@ The navbar class should include the following styles
 
 /* Enlarged images inside image cards */
 .image-card img {
-    max-width: 180%;
+    max-width: 150%;
     border-radius: 8px;
 }
 

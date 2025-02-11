@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    /* default position: STATIC */
+}
+
+#two {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    /* off set by 20px from top and left */
+    background: rgb(0, 145, 255);
+}
+
+#three {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgb(253, 191, 90);
+    /* takes the element out of the normal flow 
+       put in the container that hold the HTML tag */
+}
