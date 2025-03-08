@@ -1,0 +1,36 @@
+let age = 25;
+let name = "Owen";
+if (age > 14){
+    alert("Sorry this page is for kids only!");
+} else {
+    alert("Welcome" + name + "!")
+}
+
+// data types: int, strings, bool, objects, stings "" or ''
+
+let losers;
+// declare a variable ofr later user
+
+const earthRadius = 3959;
+// declare a constant value that cannot change, 
+// not to be call a variable
+
+//digit number, dollar sign allowed for variable name
+// js is case sensitive but html is not
+
+let total = price * (discount / 100)
+
+substrings(0,3)
+string + "concatenate with" + another string 
+
+//comparison operator  > < == !=
+
+let scoops = 5
+while (scoops > 0){
+    console.log("Another scoop!");
+    scoops = scoops -1;
+}
+
+console.log("Life without ice cream isn't the same");
+// print 5 times
+
