@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .redtext{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        <script src="dom.js"></script> will not work, js executed before the p loaded
+    -->
+    <p id="code9">My watch stopped at </p>
+
+    <script src="dom.js"></script> <!--  DOM should be put after the content -->
+
+    <p id="greenplanet">all is well </p>
+
+    <script>
+        function init(){   // by convention to name function that perform initialization
+            let planet = document.getElementById("greenplanet");
+            planet.innerHTML = "get hit by phaser fire!";
+            planet.setAttribute("class", "redtext");
+        }
+        window.onload = init;   // assigning function value of onload property, not calling the function
+    </script>
+
+
+
+
+
+</body>
+</html>
