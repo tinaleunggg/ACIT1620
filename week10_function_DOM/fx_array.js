@@ -11,7 +11,7 @@ amy primitive type can be passed as argument:
 - array
 - strings ....
 
-pass by value            values are passed to the the function and a copy is created 
+pass by value            *JS use pass by value, values are passed to the the function and a copy is created 
 pass by reference        reference to the memory location of the list is passed into the function, instead of creating a copy of values list for its own
 
 def swap(values): 
@@ -40,7 +40,7 @@ python : dynamically typed
 ARRAY methods
 .push(item)              add items to the end
 .pop()
-.shift()
+.shift()                 remove the first element and return it
 .unshift(item)           add items to the beginning
 .indexOf(item);          return first index of items, only 1 
 .lastIndexOf(item);      return last index of items
@@ -48,8 +48,8 @@ ARRAY methods
 .includes(item);         return boolean value
 .slice(start, end);
 array.concat(array)      return array concatenating two array
-array.join(" string ")   return string joing everything inside the array, joined by the specified string
-string.split(" string ") return array of strings seperated by the specified string
+array.join(" ")   return string joing everything inside the array, joined by the specified string
+string.split(" ") return array of strings seperated by the specified string
         let sentence = "Javascript is fun"
         let arr = sentence.split(" ")     // ["Javscript", "is", "fun"]
 
@@ -134,3 +134,20 @@ const square = x => x*x;
 const greet = () => "Hello world!";
 console.log(greet());
 
+// PASS BY VALUE, PASS BY REFERENCE
+
+let age = 1;
+function add(x){
+    x = x +1;
+}
+add(age);
+console.log(age);  // age is still 1, a copy of the the value is passed to function
+
+let ages = [1,2,3]
+function changeAge(list){
+    for (i = 0; i < list.length; i++){
+        list[i]++;
+    }
+}
+changeAge(ages);
+console.log(ages);    // ages are now [2,3,4], reference of list is passed to the function

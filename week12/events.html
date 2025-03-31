@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // window.onload = pageLoadHandler;
+        // function pageLoadHandler() {
+        //     alert("I'm alive")
+        // }
+        window.onload = init;    // order of defining function doesn't matter
+        function init() {
+            let images = document.getElementsByTagName("img");  // return HTML
+            for (let i=0; i < images.length ; i++){
+                images[i].onclick = showAnswer;
+                // images[i].onmouseover = showAnswer;
+                // images[i].onmouseout = reblur;
+                // onclick and onmouseover are properties of HTML element, set the property to a function
+            }
+        }
+        function showAnswer(eventObj) {
+            let image = eventObj.target;  // .target is a property of the event element, it returns the element that generate the event
+            let name = image.id;
+            name = "images_Week12/" + name + ".jpg";
+            image.src = name;
+            
+            setTimeout(reblur, 2000, image);
+
+        }
+        function reblur(image){
+            let name = image.id;
+            name = "images_Week12/" + name + "blur.jpg";
+            image.src = name;
+        }
+        // function reblur(eventObj){
+        //     let image = eventObj.target;
+        //     let name = image.id;
+        //     name = "images_Week12/" + name + "blur.jpg";
+        //     image.src = name;
+        // }
+
+
+    </script>
+
+</head>
+<body>
+    <img id="zero" src="images_Week12/zeroblur.jpg">
+    <img id="one" src="images_Week12/oneblur.jpg">
+    <img id="two" src="images_Week12/twoblur.jpg">
+    <img id="three" src="images_Week12/threeblur.jpg">
+    <img id="four" src="images_Week12/fourblur.jpg">
+    <img id="five" src="images_Week12/fiveblur.jpg">
+</body>
+</html>

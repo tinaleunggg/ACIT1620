@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #e1f4f9;
+        }
+        .profile-card {
+            background-color: white;
+            width: 250px;
+            color: rgb(22, 25, 39);            
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgb(126, 110, 110);
+            margin-bottom: 5px;            
+            padding: 20px;
+        }
+        .skills{
+            margin-top: 20px;
+        }
+        .skills span{
+            display: inline-block;
+            background-color: rgb(185, 222, 250);
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card" id="profile">
+    <!-- JSON data will be loaded here -->
+    </div>
+    <script>
+        // JSON data representing a user profile
+        const userData = {
+            "name": "Alice Johnson",
+            "age": 28,
+            "email": "alice_johnson@gmail.com",
+            "isStudent": false,
+            "skills": ["HTML", "CSS", "JS"],
+            "address": {
+                "street": "456 Oak Street",
+                "city": "Toronto",
+                "postalCode" : "M5h2N2"
+            }
+        };
+        // function to display user data in the profile card
+        function displayUserProfile(data){
+            const profilediv = document.getElementById("profile");
+            // build HTML using JSON data
+            profilediv.innerHTML = 
+            `
+            <h2> ${data.name} </h2>
+            <p><strong> Age: </strong> ${data.age} </p>
+            <p><strong> Email: </strong> ${data.email} </p>
+            <p><strong> City: </strong> ${data.address.city} </p>
+            <p><strong> Student: </strong> ${data.isStudent? "yes":"no"} </p> 
+            <div class="skills"><strong> Skills: </strong> ${data.skills.map(skill => `<span> ${skill} </span>`).join(" ")} </div> 
+
+            `
+            // (boolean expression)? (if true return this) : (if false return this)
+        };
+        displayUserProfile(userData);
+    </script>
+
+</body>
+</html>

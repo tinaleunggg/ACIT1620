@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Creating object from JSON string</h2>
+    <p id="convert"></p>
+    <script>
+        const text= '{"name": "Bob", "age" : 18}';
+        const obj = JSON.parse(text);
+        document.getElementById("convert").innerHTML = obj.name + ", " + obj.age;
+        const myJSON = JSON.stringify(obj);  // reverse
+
+    </script>
+</body>
+</html>

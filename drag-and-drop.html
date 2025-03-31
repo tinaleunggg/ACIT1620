@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            position: relative;
+        }
+        .box{
+            height: 80px;
+            width: 80px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box" id="10">
+            10
+        </div>
+    </div>
+
+
+
+    <script>
+        let box = document.getElementById("10");
+
+        box.style.left = '500px';
+        box.style.backgroundColor = "#808080";
+       // SETUP
+        var dragEl = document.getElementById('10');
+        // set CSS to 'position: absolute' or 'position: relative' !!
+        //  and the parent element to 'position: relative' !!
+
+        var dragging = false;
+        var elDragPointOffset = 0; // how far in mouse X is relative to drag el's left border
+
+        // on mouse press on drag element
+        dragEl.addEventListener('mousedown', function(evt){
+        dragging = true;
+        
+        // capture EXACT SPOT you started dragging from in the drag element
+        // var elBounds = dragEl.getBoundingClientRect();
+        // elDragPointOffset = evt.pageX - elBounds.left; // get X position of how far mouse X is inside the drag element from the drag element's left side (phew)
+        });
+
+        // on mouse release
+        window.addEventListener('mouseup', function(evt){
+        dragging = false;
+        });
+
+        // on mouse move
+        window.addEventListener('mousemove', function(evt){
+        if(dragging){
+            
+            evt.preventDefault(); // prevent text selection while dragging
+            
+            // get current mouse X position
+            var mouseX = evt.pageX;
+            
+            // get width of drag element
+            var elBounds = dragEl.getBoundingClientRect();
+            var dragElWidth = elBounds.right - elBounds.left;
+            
+            // get bounds of parent element
+            var parentContainer = dragEl.parentElement;
+            
+            var parentBounds = parentContainer.getBoundingClientRect();
+            var parentLeft = parentBounds.left;
+            var parentWidth = parentBounds.right - parentBounds.left;
+            
+            // new left position for drag element while dragging
+            var newDragElLeftValue = mouseX - parentLeft - elDragPointOffset;
+            
+            // check if new left position is within parent's borders
+            if(newDragElLeftValue < 0)
+            dragEl.style.left = 0; // place at start
+            else if(newDragElLeftValue > (parentWidth - dragElWidth))
+            dragEl.style.left = parentWidth - dragElWidth; // place at end
+            else
+            dragEl.style.left = newDragElLeftValue + 'px'; // default behavior: MOVE the drag el (this can be changed to however you like to drag)
+        }
+        });
+
+    </script>
+</body>
+</html>
