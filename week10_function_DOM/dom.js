@@ -4,7 +4,6 @@ code = code + " midnight";
 alert(code);
 
 /*
-
 Node list : 
     can contain HTML elements, text node and other nodes
     .querySelectorAll() - static - does not reflect changes in HTML elements
@@ -19,13 +18,16 @@ HTML Collection:
 Both have: 
     lenght property
     access by index
+
 HTML collection:
     can also access items by name and id
     no looping, no forEach()
-Node list
-    have forEach()
 
+Node list:
+    can use for loop
+    have forEach()
 */
+
 
 function changeColor(){
     let elements = document.getElementsByClassName("highlight");
